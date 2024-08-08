@@ -26,8 +26,8 @@ const PhotoGallery = () => {
                     'X-API-Key' : apiKey,
                 }
             })
-                // setPhotos(res.data);
-                setPhotos(prevItems => [...prevItems, ...res.data]);
+                setPhotos(res.data);
+                // setPhotos(prevItems => [...prevItems, ...res.data]);
                 
                 // console.log(res.data)
                 setError(null)
@@ -57,20 +57,20 @@ const PhotoGallery = () => {
     };
     }, [])
 
-    useEffect(() => {
-        const event = window.addEventListener("scroll", () => {
-          if (
-            (!loading && window.innerHeight + window.scrollY) >=
-            document.body.scrollHeight - 2
-          ) {
-            setPage((oldPage) => {
-              return oldPage + 1;
-            });
-          }
-        });
+    // useEffect(() => {
+    //     const event = window.addEventListener("scroll", () => {
+    //       if (
+    //         (!loading && window.innerHeight + window.scrollY) >=
+    //         document.body.scrollHeight - 2
+    //       ) {
+    //         setPage((oldPage) => {
+    //           return oldPage + 1;
+    //         });
+    //       }
+    //     });
     
-        return () => window.removeEventListener("scroll", event);
-      }, []);
+    //     return () => window.removeEventListener("scroll", event);
+    //   }, []);
     return (
     <div className='bg-slate-100 h-screen'>
         <p className='p-8 text-center font-extrabold text-blue-400 text-3xl'>Photo Galllery</p>
