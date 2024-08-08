@@ -13,7 +13,7 @@ const PhotoGallery = () => {
 
     const fecthPhotos = async () => {
         setLoading(true)
-        const apiUrl = `https://api.unsplash.com/photos?client_id=${apiKey}&page=${page}`
+        const apiUrl = `https://api.unsplash.com/photos?client_id=${apiKey}&page=${page}&per_page=15`
         
         if (!apiKey) {
             setError('API key is missing');
@@ -93,9 +93,24 @@ const PhotoGallery = () => {
                             </div>
                         </div>
                     ))}
+                
             </div>  
         )}
-
+                {photos && (
+                    <div className='text-center mt-4 mb-12 '>
+                        {page > 1 ? (
+                            <button onClick={() => setPage(page- 1)}
+                            className='bg-red-500 hover:bg-red-800 hover:cursor-pointer border-none py-2 px-4 text-white font-medium rounded-lg m-4'
+                            >Previous</button>
+                        ):(
+                            <button disabled
+                            className='bg-red-300 border-none py-2 px-4 text-white font-medium rounded-lg m-4'
+                            >Previous</button>
+                        )}
+                        <button onClick={() => setPage(page + 1)} 
+                        className='bg-indigo-500 hover:bg-indigo-800 hover:cursor-pointer border-none py-2 px-4 text-white font-medium rounded-lg m-4'>Next</button>
+                    </div>
+                )}
     
     {/* 👇️ scroll to top on button click */}
     {scrollBtn && (
