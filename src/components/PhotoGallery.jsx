@@ -99,7 +99,7 @@ const PhotoGallery = () => {
     
     {/* 👇️ scroll to top on button click */}
     {scrollBtn && (
-        <div className='animate-bounce bottom-10 right-10 fixed p-7 bg-slate-300 rounded-full' onClick={handleScrollToTop}>
+        <div className='animate-bounce bottom-10 right-10 fixed p-7 bg-slate-300 rounded-full hover:cursor-pointer' onClick={handleScrollToTop}>
             <img src={up_icon} alt=""  
             className=' w-6' />
         </div>
