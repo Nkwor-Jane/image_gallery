@@ -40,7 +40,7 @@ const PhotoGallery = () => {
     };
     useEffect(() =>{
         fecthPhotos();
-    },[page])
+    },[ page])
 
     // Handle bouncing button to scroll to top after 300 px of window
     const handleScrollToTop =() =>{
