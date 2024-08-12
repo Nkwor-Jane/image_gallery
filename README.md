@@ -38,8 +38,11 @@ The PhotoGallery component is the main React component. It handles the following
 ## Screenshots
 
 - Desktop View
+  
 ![Desktop View](public/img_gallery1.png)
+
 - Mobile View
+
 ![Mobile View](public/img_gallery2.png)
 
 ## Live Demo
