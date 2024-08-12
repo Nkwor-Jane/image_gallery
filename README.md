@@ -1,15 +1,15 @@
-# Photo Gallery with UnSPlash API
+# Photo Gallery with Unsplash API
 
 ## Overview
 
-This project is part of the Codevixens 10 Days of Frontend Challenge (Day 9). This photo gallery web application was built using Vite React. The task focuses on mastering API integraion (UnSplash API) and creating a simple user interface in ReactJS.
+This project is part of the Codevixens 10 Days of Frontend Challenge (Day 9). This photo gallery web application was built using Vite React. The task focuses on mastering API integration (Unsplash API) and creating a simple user interface in ReactJS.
 
 ## Features
 
 - **API Integration:** Sign up on Unsplash to get your API key. The API key is used to fetch photos.
-- **State Management:** React's **useState** and **useEffect** hooks were used to manage fetched photos, load state and potential errors.
-- **User Interface:** The fetched photos where displayed in a grid layout. Each card contains the photo, photographer's picture, name of the photographer and number of likes for the photo.
-- **Error Handling:** This was done to provide appropriate feedback incases where the API calls fails.
+- **State Management:** React's **useState** and **useEffect** hooks were used to manage fetched photos, load state, and potential errors.
+- **User Interface:** The fetched photos were displayed in a grid layout. Each card contains the image, photographer's picture, photographer's name, and number of likes for the photo.
+- **Error Handling:** This was done to provide appropriate feedback when API calls fail.
 
 ## Installation
 
@@ -66,6 +66,6 @@ This project is licensed under the MIT License
 ## Acknowledgements
 
 - [Codevixens](https://codevixens.org/) for organizing this challenge.
-- Lois Bassey, Chinaza Igboanugo, Gaelle Tiku Brenda - and Oyakinsola Shoroye for their contributions and guidance towards the successful completion of this projects.
+- Lois Bassey, Chinaza Igboanugo, Gaelle Tiku Brenda - and Oyakinsola Shoroye for their contributions and guidance towards the successful completion of this project.
 
 Feel free to customize it further to fit your needs! If you have any specific details you'd like to add or change, let me know.
