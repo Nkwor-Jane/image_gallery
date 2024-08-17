@@ -57,7 +57,7 @@ Check out the live demo [here](https://image-gallery-two-lemon.vercel.app/).
 
 ## Contirbuting
 
-Feel free to clone and fork this repository. You can also submit pull requests. Any conributions are welcome!
+Feel free to clone and fork this repository. You can also submit pull requests. Any contributions are welcome!
 
 ## License
 
